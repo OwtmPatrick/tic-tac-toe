@@ -59,12 +59,27 @@ body {
   left: 18px;
   width: 110px;
   height: 110px;
-  background-image: url(/cross.svg);
   opacity: 0;
+}
+
+.field__item.cross:before,
+.field__item.crossed:before {
+  background-image: url(/cross.svg);
+}
+
+.field__item.null:before,
+.field__item.nulled:before {
+  background-image: url(/null.svg);
 }
 
 .field__item:hover:before {
   opacity: 0.15;
+  transition: 0.5s;
+}
+
+.field__item.crossed:before,
+.field__item.nulled:before {
+  opacity: 1;
 }
 
 .info {
