@@ -89,3 +89,20 @@ body {
   padding: 28px;
   border-radius: 16px;
 }
+
+.info__restart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-height: 104px;
+  box-sizing: border-box;
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.info__restart:hover {
+  opacity: 0.85;
+  transition: 0.3s;
+}
